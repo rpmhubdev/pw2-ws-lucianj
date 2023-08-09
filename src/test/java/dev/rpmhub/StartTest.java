@@ -12,7 +12,7 @@ public class StartTest {
     @Test
     public void testHelloEndpoint() {
         given()
-                .when().get("/hello")
+                .when().get("/api/hello")
                 .then()
                 .statusCode(200)
                 .body(is("Hello from RESTEasy"));
@@ -29,7 +29,7 @@ public class StartTest {
             .contentType("application/x-www-form-urlencoded; charset=utf-8")
             .formParam("kmh", "1")
         .when()
-            .post("/kmh2mih")
+            .post("/api/kmh2mih")
         .then()
             .statusCode(200)
             .body(is("0.621"));
@@ -43,7 +43,7 @@ public class StartTest {
     public void testNo2kmh() {
         given()
         .when()
-            .get("/no2kmh/1")
+            .get("/api/no2kmh/1")
         .then()
             .statusCode(200)
             .body(is("1.852"));

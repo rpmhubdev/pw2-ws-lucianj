@@ -7,7 +7,7 @@ Depois escrevam um Web Service em Rest que possibilite as seguintes conversões:
 
 * Quilômetro por hora para milhas por hora (1=0.621) – esse método (kmh2mih)
   deve consumir por POST e produzir dados em texto.
-* Nós para quilometro por hora (1=1.852) – esse método (No2kmh) deve consumir
+* Nós para quilometro por hora (1=1.852) – esse método (no2kmh) deve consumir
   dados por GET e produzir dados em em JSON.
 
 ## Running the application in dev mode
