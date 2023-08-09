@@ -26,9 +26,10 @@ public class StartTest {
     @Test
     public void testKmh2mih() {
         given()
-            .body("1")
-            .header("Content-Type", "text/plain")
-        .when().post("/kmh2mih")
+            .contentType("application/x-www-form-urlencoded; charset=utf-8")
+            .formParam("kmh", "1")
+        .when()
+            .post("/kmh2mih")
         .then()
             .statusCode(200)
             .body(is("0.621"));
@@ -41,7 +42,8 @@ public class StartTest {
     @Test
     public void testNo2kmh() {
         given()
-        .when().get("/no2kmh/1")
+        .when()
+            .get("/no2kmh/1")
         .then()
             .statusCode(200)
             .body(is("1.852"));
