@@ -10,6 +10,8 @@ Depois escrevam um Web Service em Rest que possibilite as seguintes conversões:
 * Nós para quilometro por hora (1=1.852) – esse método (no2kmh) deve consumir
   dados por GET e produzir dados em em JSON.
 
+# Quarkus
+
 ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
